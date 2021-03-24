@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/item_shape"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/tv_fullname"
+            style="@style/TextTitle"
+            android:layout_toEndOf="@id/civ_user_item"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="18"
+            tools:text="@string/txt_full_name" />
+
+        <TextView
+            android:id="@+id/tv_middle_dot"
+            style="@style/TextTitle"
+            android:layout_toEndOf="@id/tv_fullname"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/txt_middle_dot"
+            android:textColor="@color/accent_red" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/TextTitle"
+            android:layout_toEndOf="@id/tv_middle_dot"
+            android:ellipsize="end"
+            android:fontFamily="@font/worksanssemibold"
+            android:lines="1"
+            android:textColor="@color/accent_red"
+            tools:text="@string/txt_username" />
+
+        <TextView
+            android:id="@+id/tv_txt_company"
+            style="@style/TextSubtitle"
+            android:layout_below="@id/tv_fullname"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/civ_user_item"
+            android:text="@string/txt_txt_company" />
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            style="@style/TextSubtitle"
+            android:layout_below="@id/tv_fullname"
+            android:layout_toEndOf="@id/tv_txt_company"
+            android:ellipsize="end"
+            android:lines="1"
+            tools:text="@string/txt_company_name" />
+
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
